@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #00252e;
+  font-family: "Roboto", sans-serif;
+  background-image: 135deg, hsl(0, 80%, 10%), hsl(0, 100%, 98%);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+.container {
+  display: flex;
+  padding: 1.3rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 62rem;
+}
+
+img {
+  width: 200px;
+  border-radius: 0.4rem;
+}
+
+.left {
+  max-width: 50%;
+}
+
+.right {
+  min-width: 50%;
+  margin-left: 2rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.bio-data li {
+  font-size: 0.9rem;
+  color: #3814a5;
+}
+
+.bio-data li span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #00252e;
+}
+
+.summary {
+  max-width: 70%;
+  margin: 1rem 0 3rem;
+}
+
+.summary h1 {
+  color: #3814a5;
+}
+
+.summary p {
+  line-height: 1.3;
+}
+
+.summary p span {
+  display: none;
+}
+
+.contact h2 {
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.7rem;
+  border: 1px solid #ccc;
+}
+
+input {
+  padding: 0.8rem 1rem;
+}
+
+textarea {
+  padding: 0.8rem 1rem;
+}
+
+button {
+  font-weight: 600;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0.6rem 1rem;
+  background-color: #2f35cc;
+  border: 0;
+  outline: 0;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #3814a5;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .left {
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  img {
+    /* width: 100px; */
+    border-radius: 50%;
+    border: 1px solid #3814a5;
+  }
+
+  .bio-data li span {
+    display: inline;
+    margin-right: 0.7rem;
+  }
+
+  .summary {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary h1 {
+    display: none;
+  }
+
+  .summary p span {
+    display: inline;
+    font-size: 1.5rem;
+    color: #3814a5;
+    font-weight: 700;
+  }
+
+  .contact {
+    border-top: 1px solid #ccc;
+    padding: 1rem 0 0.5rem;
+  }
+
+  .contact h2 {
+    font-size: 1.2rem;
+  }
+}
